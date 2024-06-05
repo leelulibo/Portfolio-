@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="'viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <!--font awesome cdn link-->
-    <link rel="stylesheet" href="http://cdn.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdn.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
 </head>
 <style>
@@ -59,30 +56,39 @@
         margin-bottom: 5px;
         color: #3b82f6;
     }
-    .service-cotainer p{
+    .service-cotainer p {
         color: black;
     }
-    .lang i{
+    .lang {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem; /* Space between icons */
+    }
+    .lang i {
         display: inline-flex;
         justify-content: center;
         align-items: center;
         width: 6rem;
         height: 6rem;
         background: transparent;
-        /* border: .20em solid orange; */
-        border-radius:10%;
-        font-size: 10rem;
+        border-radius: 5%;
+        font-size: 4rem;
         color: black;
-        margin-right: 15%; /* Adjust margin-right for space between icons */
-        margin-left: 15%;
         transition: .5s ease;
-      }
-    
+    }
+    .square-image {
+        width: 700px; /* Set the desired width */
+        height: 100px; /* Set the desired height */
+        object-fit: cover; /* Ensures the image covers the area of the square without distortion */
+        border-radius: 0%;
+
+    }
     
 </style>
 <body>
     <header>
-
         <div class="user">
             <img src="images/WhatsApp_Image_2024-01-17_at_23.15.14-removebg-preview.png" alt="">
             <h3 class="name">Lulibo Mtampu</h3>
@@ -94,15 +100,12 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#service">Projects</li>
-
+                <li><a href="#service">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-
     <div class="container">
-
         <section class="home" id="home">
             <h3 class="name">My name is <span>Lulibo Mtampu</span></h3>
             <h3 class="post"> <span class="typing-text"></span></h3>
@@ -110,22 +113,15 @@
 
             <div class="share">
                 <a href="https://www.youtube.com/@Women_In_Tech" target="_blank"><i class='bx bxl-youtube'></i></a>
-                <a href="https://www.linkedin.com/in/lulibo-mtampu-707978211" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://www.googlemail.com/leelulibo@gmai.com" target="_blank"><i
-                        class='bx bx-envelope'></i></a>
+                <a href="https://www.linkedin.com/in/lulibo-mtampu-707978211" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.googlemail.com/leelulibo@gmai.com" target="_blank"><i class='bx bx-envelope'></i></a>
                 <a href="https://github.com/leelulibo" target="_blank"><i class='bx bxl-github'></i></a>
-
             </div>
-
         </section>
 
-       <!-- contact session -->
+        <!-- Contact section -->
         <section class="contact" id="contact">
-
-
             <div class="row">
-
                 <form action="">
                     <h3>Contact Me</h3>
                     <div class="inputBox">
@@ -140,32 +136,23 @@
                     <div class="inputBox">
                         <input type="text" placeholder="Message" required>
                     </div>
-
-
                     <input type="submit" value="Send A Message" class="btn">
-                </form> 
+                </form>
+            </div>
+        </section>
 
-                <!-- <div class="image">
-                    <img src="images/contact.png" alt="">
-                </div> -->
+        <!-- About section -->
+        <section class="about" id="about">
+            <div class="content">
+                <div>
+                    <h2 style="font-size: 30px;">Fullstack Developer</h2>
 
-            <!-- </div> -->
-
-            <!-- about section -->
-            <section class="about" id="about">
-                <!-- <h1 class="heading">About Me</h1> -->
-                <div class="content">
-                    <!-- <img id="profilePicture" src="images/hackaton1.jfif" alt="" width="150" height="150"> -->
-                    <div>
-                        <!-- <h3 class="name">My name is <span>Lulibo Mtampu</span></h3> -->
-                        <p style="font-size: 17px;">
-                            I thrive on challenges, transforming them into opportunities through real-life projects. With an exciting journey in technology, I bring a diverse background in management and marketing that has enhanced my communication and leadership skills. As a technical mentor and leader in the Womethinkcode community, I foster collaborative learning and encourage others to achieve their best.
-                            Currently, I am kickstarting my career in the industry while creating engaging tech content on YouTube. I am always eager to learn new concepts and technologies, staying up-to-date with the latest innovations. My passion for technology extends beyond the screen as I actively participate in tech events, workshops, and hackathons.
-                        </p>
-                    </div>
+                    <p style="font-size: 17px;font-style: italic;" >
+                        I thrive on challenges, transforming them into opportunities through real-life projects. With an exciting journey in technology, I bring a diverse background in management and marketing that has enhanced my communication and leadership skills. As a technical mentor and leader in the Womethinkcode community, I foster collaborative learning and encourage others to achieve their best.
+                        Currently, I am kickstarting my career in the industry while creating engaging tech content on YouTube. I am always eager to learn new concepts and technologies, staying up-to-date with the latest innovations. My passion for technology extends beyond the screen as I actively participate in tech events, workshops, and hackathons.
+                    </p>
                 </div>
-            </section>
-
+            </div>
             <div class="lang">
                 <i class='bx bxl-python'></i>
                 <i class='bx bxl-java'></i>
@@ -175,119 +162,110 @@
                 <i class='bx bxl-react'></i>
                 <i class='bx bxl-nodejs'></i>
                 <i class='bx bxs-data'></i>
-            </section>
-                <!-- <h1 class="heading">Projects</h1> -->
-                <section class="service" id="service">
-                    <h2 class="heading">Projects</h2>
-
-                    <div class="service-cotainer">
-                        <div class="service-box">
-                            <i class='bx bxs-data'></i>
-                            <h3>Database</h3>
-                            <p>
-                                This Java project facilitates the management of phone events and email addresses by
-                                leveraging an SQLite database. It empowers users to create tables, seamlessly import
-                                data from CSV files, and efficiently update email addresses. Prior to utilizing the
-                                project, ensure you have the Java Development Kit (JDK) and the SQLite JDBC Driver
-                                installed.
-                            </p>
-                            <a href="https://github.com/leelulibo/Database" class="btn" target="_blank">Click</a>
-
-
-                        </div>
-                    </div>
-
-                    <div class="service-cotainer">
-                        <div class="service-box">
-                            <i class='bx bx-code-alt'></i>
-                            <h3>Web Development</h3>
-                            <p>
-                                Collaratively created a vibrant website designed to offer premier braiding services to
-                                customers. Crafted with HTML, CSS, and JavaScript, this platform provides an immersive
-                                experience where users can explore a variety of braiding styles and book appointments
-                                with skilled professionals. From intricate cornrows to elegant box braids, the website
-                                showcases a range of stunning options tailored to meet diverse preferences.</p>
-                            <!-- <a href="#" class="btn">Read More</a> -->
-                            <a href="https://github.com/leelulibo/HTML" class="btn" target="_blank">Click</a>
-        
-                </div>       
+            </div>
+            <div class="container">
+                <img src="images/footer.png" alt="" class="square-image">
+                <input type="submit" value="Subscribe" class="btn">
             </div>
             
-            <div class="service-cotainer">
+
+
+        </section>
+
+        <!-- Icons Section -->
+      
+
+        <!-- Projects section -->
+        <section class="service" id="service">
+            <h2 class="heading">Projects</h2>
+            <div class="service-container">
+                <div class="service-box">
+                    <i class='bx bxs-data'></i>
+                    <h3>Database</h3>
+                    <p>
+                        This Java project facilitates the management of phone events and email addresses by leveraging an SQLite database. It empowers users to create tables, seamlessly import data from CSV files, and efficiently update email addresses. Prior to utilizing the project, ensure you have the Java Development Kit (JDK) and the SQLite JDBC Driver installed.
+                    </p>
+                    <a href="https://github.com/leelulibo/Database" class="btn" target="_blank">Click</a>
+                </div>
+            </div>
+
+            <div class="service-container">
+                <div class="service-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p>
+                        Collaboratively created a vibrant website designed to offer premier braiding services to customers. Crafted with HTML, CSS, and JavaScript, this platform provides an immersive experience where users can explore a variety of braiding styles and book appointments with skilled professionals. From intricate cornrows to elegant box braids, the website showcases a range of stunning options tailored to meet diverse preferences.
+                    </p>
+                    <a href="https://github.com/leelulibo/HTML" class="btn" target="_blank">Click</a>
+                </div>
+            </div>
+
+            <div class="service-container">
                 <div class="service-box">
                     <i class='bx bx-code-alt'></i>
                     <h3>Name Sorter</h3>
                     <p>
-                        Java project sorts names, emphasizes engineering principles. Built with Maven, includes tests for functionality and component integrity. Docker for easy deployment, .travis.yml for CI on Travis. </p> 
-                         <!-- <a href="#" class="btn">Read More</a> -->
-                         <a href="https://github.com/leelulibo/nameSorter" class="btn" target="_blank">Click</a>
-         
-                            < </div> 
-                            </section>     
-
-                             </section> 
-                           
-                    <i class="fab fa-javascript"></i>
+                        Java project sorts names, emphasizes engineering principles. Built with Maven, includes tests for functionality and component integrity. Docker for easy deployment, .travis.yml for CI on Travis.
+                    </p>
+                    <a href="https://github.com/leelulibo/nameSorter" class="btn" target="_blank">Click</a>
                 </div>
             </div>
-        </section> 
-                
-                          
+        </section>
+
+        <!-- Slideshow section -->
         <div class="slideshow-container">
             <div class="slide fade">
-              <img src="images/girlcode.jpg" alt="Slide 1">
+                <img src="images/girlcode.jpg" alt="Slide 1">
             </div>
             <div class="slide fade">
-              <img src="images/tigerbettle.jpg" alt="Slide 2">
+                <img src="images/tigerbettle.jpg" alt="Slide 2">
             </div>
             <div class="slide fade">
-              <img src="images/accso.jpg" alt="Slide 3"> 
-                          
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+                <img src="images/accso.jpg" alt="Slide 3">
+            </div>
+        </div>
 
-                        <script>
-                            var type = new Typed('.typing-text', {
-                                strings: ['Open to work', 'Hire me!', 'Open to work'],
-                                typeSpeed: 150,
-                                loop: true
-                            })
-                        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script>
+            var type = new Typed('.typing-text', {
+                strings: ['Open to work', 'Hire me!', 'Open to work'],
+                typeSpeed: 150,
+                loop: true
+            })
+        </script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("your_user_id");
+            })();
 
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
 
-</body>
-<!-- Include EmailJS SDK -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function() {
-        emailjs.init("your_user_id");
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        emailjs.sendForm('service_45lvbr8', 'template_mn0i29m', this)
-            .then(function() {
-                alert('Message sent successfully!');
-            }, function(error) {
-                alert('Failed to send message.');
+                emailjs.sendForm('service_45lvbr8', 'template_mn0i29m', this)
+                    .then(function() {
+                        alert('Message sent successfully!');
+                    }, function(error) {
+                        alert('Failed to send message.');
+                    });
             });
-    });
-</script>
-    <script>
-        const images = [
-            'images/tigerbettle.jpg',
-            'images/accso.jpg',
-            'image3.jpg' // Add paths to your images here
-        ];
-        let currentImageIndex = 0;
-    
-        function changeImage() {
-            const imgElement = document.getElementById('profilePicture');
-            imgElement.src = images[currentImageIndex];
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-        }
-    
-        setInterval(changeImage, 3000); // Change image every 3 seconds
-    </script>
-    
-</html
+        </script>
+        <script>
+            const images = [
+                'images/tigerbettle.jpg',
+                'images/accso.jpg',
+                'image3.jpg'
+            ];
+            let currentImageIndex = 0;
+
+            function changeImage() {
+                const imgElement = document.getElementById('profilePicture');
+                imgElement.src = images[currentImageIndex];
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+            }
+
+            setInterval(changeImage, 3000);
+        </script>
+    </div>
+</body>
+</html>
