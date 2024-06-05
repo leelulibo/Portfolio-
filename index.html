@@ -41,7 +41,7 @@
         margin-right: 20px;
     }
     .about .content p {
-        max-width: 600px;
+        max-width: 700px;
         color: black; /* Set paragraph text color to black */
     }
     .about .skills {
@@ -62,6 +62,23 @@
     .service-cotainer p{
         color: black;
     }
+    .lang i{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        height: 6rem;
+        background: transparent;
+        /* border: .20em solid orange; */
+        border-radius:10%;
+        font-size: 10rem;
+        color: black;
+        margin-right: 15%; /* Adjust margin-right for space between icons */
+        margin-left: 15%;
+        transition: .5s ease;
+      }
+    
+    
 </style>
 <body>
     <header>
@@ -89,7 +106,7 @@
         <section class="home" id="home">
             <h3 class="name">My name is <span>Lulibo Mtampu</span></h3>
             <h3 class="post"> <span class="typing-text"></span></h3>
-            <a href="#"><button class="btn">Download Resume</button></a>
+            <a href="Resume-Lulibo-Mtampu-.pdf"><button class="btn">Download Resume</button></a>
 
             <div class="share">
                 <a href="https://www.youtube.com/@Women_In_Tech" target="_blank"><i class='bx bxl-youtube'></i></a>
@@ -136,58 +153,28 @@
 
             <!-- about section -->
             <section class="about" id="about">
-                <h1 class="heading">About Me</h1>
+                <!-- <h1 class="heading">About Me</h1> -->
                 <div class="content">
-                    <img src="" alt="Profile Picture" width="150" height="150"> 
+                    <!-- <img id="profilePicture" src="images/hackaton1.jfif" alt="" width="150" height="150"> -->
                     <div>
-                        <h3 class="name">My name is <span>Lulibo Mtampu</span></h3>
-                        <p>
-                            I'm a dedicated developer with a passion for Java,Python,Javascript,SQL programming and a knack for web
-                            development. I thrive in collaborative environments, leveraging experience with Java IDEs like IntelliJ, while
-                            honing skills in version control and software development lifecycle methodologies. With familiarity in Linux
-                            distributions such as Ubuntu. I'm poised to explore new technologies and drive innovation.
-                            I'm a proactive problem-solver with excellent English communication skills. Whether working independently or
-                            within a team, my analytical mindset and attention to detail drive success in fast-paced environments.
-                            Additionally, my experience with JSON, Gson, REST APIs, and Javelin server further enhances cutting-edge
-                            projects.
+                        <!-- <h3 class="name">My name is <span>Lulibo Mtampu</span></h3> -->
+                        <p style="font-size: 17px;">
+                            I thrive on challenges, transforming them into opportunities through real-life projects. With an exciting journey in technology, I bring a diverse background in management and marketing that has enhanced my communication and leadership skills. As a technical mentor and leader in the Womethinkcode community, I foster collaborative learning and encourage others to achieve their best.
+                            Currently, I am kickstarting my career in the industry while creating engaging tech content on YouTube. I am always eager to learn new concepts and technologies, staying up-to-date with the latest innovations. My passion for technology extends beyond the screen as I actively participate in tech events, workshops, and hackathons.
                         </p>
                     </div>
                 </div>
-        
-                <div class="skills">
-                    <div class="skill">
-                        <i class="fab fa-html5"></i>
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-css3-alt"></i>
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-js"></i>
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-js"></i>
-                        <h3>React</h3>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-js"></i>
-                        <h3>NodeJS</h3>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-python"></i>
-                        <h3>Python</h3>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-java"></i>
-                        <h3>Java</h3>
-                    </div>
-                    <div class="skill">
-                        <i class="fas fa-database"></i>
-                        <h3>SQL</h3>
-                    </div>
-                </div>
+            </section>
+
+            <div class="lang">
+                <i class='bx bxl-python'></i>
+                <i class='bx bxl-java'></i>
+                <i class='bx bxl-html5'></i>
+                <i class='bx bxl-css3'></i>
+                <i class='bx bxl-javascript'></i>
+                <i class='bx bxl-react'></i>
+                <i class='bx bxl-nodejs'></i>
+                <i class='bx bxs-data'></i>
             </section>
                 <!-- <h1 class="heading">Projects</h1> -->
                 <section class="service" id="service">
@@ -239,60 +226,13 @@
                             </section>     
 
                              </section> 
-                            <!-- <section class="service" id="service">
-            <h1 class="heading"> My projects</h1>
-            <div class="box-container">
-                <div class="box">
-                    <img src="images/css.png"> -->
-                            <!-- <p>Good nton nton</p> -->
-                <!-- </div> -->
-                <!-- <div class="box">
-                    <i class="fab fa-css"></i>
-                    <p>Good nton nton</p> -->
-                <!-- </div> --> 
-                <!-- <div class="box">
-                    <i class="fab fa-java"></i>
-                    <p>Good nton nton</p>
-                </div>
-                <div class="box">
-                    <i class="fab fa-python"></i>
-                    <p>Good nton nton</p>
-                </div>
-                <div class="box">
+                           
                     <i class="fab fa-javascript"></i>
-                    <p>Good nton nton</p>
                 </div>
             </div>
-        </section> --> 
-                            <!-- <h3 class="name">My name is <span>Lulibo Mtampu</span></h3>  -->
-
-
-                            <!-- <div class="skills">
-            <div class="progress">
-                <h3>html<span>90%</span></h3>
-            </div>
-            <div class="progress">
-                <h3>css<span>90%</span></h3>
-            </div>
-            <div class="progress">
-                <h3>js<span>90%</span></h3>
-            </div>
-            <div class="progress">
-                <h3>python<span>90%</span></h3>
-            </div>
-        </div> -->
-                            <!-- </section> -->
-
-
-                            <!-- <h1>Software Developer</h1>
-<P>I'm a dedicated developer with a passion for Java,Python,Javascript,SQL programming and a knack for web development. I thrive in collaborative environments, leveraging experience with Java IDEs like IntelliJ, while honing skills in version control and software development lifecycle methodologies. With familiarity in Linux distributions such as Ubuntu. I'm poised to explore new technologies and drive innovation.
-
-    I'm a proactive problem-solver with excellent English communication skills. Whether working independently or within a team, my analytical mindset and attention to detail drive success in fast-paced environments.
-    
-    Additionally, my experience with JSON, Gson, REST APIs, and Javelin server further enhances cutting-edge projects. If you're ready to embrace new challenges and contribute to a culture of innovation, let's connect and embark on this exciting journey together!</P>
-      about section -->
-                            <!-- <section class="projects" id="projects">
-        
+        </section> 
+                
+                          
         <div class="slideshow-container">
             <div class="slide fade">
               <img src="images/girlcode.jpg" alt="Slide 1">
@@ -301,28 +241,8 @@
               <img src="images/tigerbettle.jpg" alt="Slide 2">
             </div>
             <div class="slide fade">
-              <img src="images/accso.jpg" alt="Slide 3"> -->
-                            <!-- </div>
-            <div class="slide fade">
-              <img src="images/pwc.jpg" alt="Slide 4">
-            </div>
-            <div class="slide fade">
-              <img src="images/accso.jpg" alt="Slide 5">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-               -->
-
-                            <!-- </section>     --> 
-
-                        <!-- </div>
-                        <section>
-                            <footer></footer>
-                        </section> -->
-
-                        <!-- type.js cdn link -->
-
+              <img src="images/accso.jpg" alt="Slide 3"> 
+                          
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
                         <script>
@@ -334,30 +254,6 @@
                         </script>
 
 
-                        <!-- </script>
-
-<script>let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      const slides = document.getElementsByClassName("slide");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      slides[slideIndex-1].style.display = "block";  
-    }
-    </script> -->
 </body>
 <!-- Include EmailJS SDK -->
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -377,4 +273,21 @@
             });
     });
 </script>
+    <script>
+        const images = [
+            'images/tigerbettle.jpg',
+            'images/accso.jpg',
+            'image3.jpg' // Add paths to your images here
+        ];
+        let currentImageIndex = 0;
+    
+        function changeImage() {
+            const imgElement = document.getElementById('profilePicture');
+            imgElement.src = images[currentImageIndex];
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+    
+        setInterval(changeImage, 3000); // Change image every 3 seconds
+    </script>
+    
 </html
